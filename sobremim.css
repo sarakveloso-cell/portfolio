@@ -1,0 +1,142 @@
+body{
+    color: rgb(248, 63, 100);
+    background-color: rgb(255, 199, 208);
+    font-family: unset;
+    font-size:large;
+    text-align: center;
+}
+
+button{
+    color: rgb(255, 255, 255);
+    width: 80px;
+    height: 30px;
+    background-color: rgb(231, 113, 178);
+    font-size:small;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-color: rgb(255, 32, 184);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    margin-right: auto;
+}
+  
+a {
+    text-decoration: none;
+}
+
+button:hover{
+    box-shadow: 0 0 30px rgb(218, 75, 146);
+    transform: scale(1.15);
+}
+
+.sobre-mim {
+    background-color: #f7c9d3;
+    padding: 30px;
+}
+
+.sobre-mim h1 {
+    text-align: center;
+    color: #ff3b6f;
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.card {
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    max-width: 400px;
+    height: 230px;
+    object-fit: cover;
+    border: 3px solid #d85b72;
+    border-radius: 20px;
+}
+
+.card h2 {
+    margin-top: 20px;
+    color: #b22222;
+}
+
+.card p {
+    color: #b03256;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+footer p{
+    text-align: center;
+    padding: 5px;
+    margin-top: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cards-historia{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card img{
+    width: 350px;
+    height: 260px;
+    object-fit: cover;
+    border: 3px solid #d94c68;
+    border-radius: 20px;
+}
+
+
+.card-principal{
+    text-align: center;
+    margin: 40px 0;
+}
+
+.card-principal img{
+    width: 500px;
+    border-radius: 20px;
+    border: 3px solid #d94c68;
+}
+
+.texto-historia{
+    margin-left: 70px;
+    margin-right: 70px;
+    font-size: 18px;
+    color: #b33055;
+}
+
+.historia h3{
+    color: #b22222;
+    font-size: 26px;
+}
+
+.cards-amigos{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+
+.texto-amigos{
+    margin-left: 80px;
+    margin-right: 80px;
+    font-size: 18px;
+    color: #b83359;
+}
+
+.amigos h3{
+    margin-top: 80px;
+    color: #b22222;
+    font-size: 26px;
+}

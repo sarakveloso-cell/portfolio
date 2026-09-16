@@ -1,0 +1,162 @@
+body{
+    color: rgb(248, 63, 100);
+    background-color: rgb(255, 199, 208);
+    font-family: unset;
+    font-size:x-large;
+    text-align: center;
+}
+
+h2{
+    font-size: 20px;
+    color: crimson;
+}
+
+button{
+    color: rgb(255, 255, 255);
+    width: 80px;
+    height: 30px;
+    background-color: rgb(231, 113, 178);
+    font-size:small;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-color: rgb(255, 32, 184);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    margin-right: auto;
+}
+  
+a {
+    text-decoration: none;
+}
+
+button:hover{
+    box-shadow: 0 0 30px rgb(218, 75, 146);
+    transform: scale(1.15);
+}
+
+
+header img{
+    width: 250px;
+    height: 330px;
+    border-radius: 15px;
+    border: 2px solid rgb(200, 86, 103);
+    align-items:first baseline;
+    
+}
+
+.atividades {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+
+}
+
+.atividades2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+
+}
+
+.atividades3 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+
+}
+
+.atividades4 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+
+}
+
+.atividades5 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.atividades6 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.atividades7 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+
+}
+
+
+.atividades8 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.atividades9 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.atividades10 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.atividades11 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.atividades12 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.atividades13 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+
+}
+
+
+footer p{
+    text-align: center;
+    padding: 5px;
+    margin-top: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+

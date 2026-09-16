@@ -1,0 +1,86 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;     
+    background-image: url("img/Pink.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+button{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: rgb(255, 255, 255);
+    width: 80px;
+    height: 30px;
+    background-color: rgb(231, 113, 178);
+    font-size: small;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-color: rgb(255, 32, 184);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+  
+a {
+    text-decoration: none;
+}
+
+button:hover{
+    box-shadow: 0 0 30px rgb(218, 75, 146);
+    transform: scale(1.15);
+}
+.card{
+    width: 600px;
+    height: 500px;
+    background: #ac0371c4;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(220, 0, 139, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.card h1{
+    font-family: 'Great Vibes', cursive;
+    color: #ebbc7e;
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+
+.conteudo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.conteudo img{
+    width: 180px;
+}
+
+.contato{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.contato p{
+    color: #dbb485;
+    font-size: 22px;
+    text-align: left;
+}
+
+footer{
+    margin-top: 30px;
+    color:rgb(136, 26, 81);
+    font-size: 14px;
+    text-align: center;
+}

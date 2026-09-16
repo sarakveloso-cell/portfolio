@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(
+        120deg,
+        #6e1d3f,
+        #9b4774,
+        #7e004c,
+        #7d0843
+    );
+    height: 100vh;
+    overflow: hidden;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: #f4cae0;
+    border-radius: 10px;
+    padding: 0 40px 30px 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.center h1 {
+    text-align: center;
+    padding: 0 0 20px 0;
+    color: #7d0843;
+    border-bottom: 1px solid rgb(120, 0, 78);
+}
+
+form .txt_field {
+    position: relative;
+    border-bottom: 2px solid #b25e8c;
+    margin: 30px 0;
+}
+
+.txt_field input {
+    width: 100%;
+    padding: 0 2px;
+    height: 20px;
+    font-size: 13px;
+    border: none;
+    background:#f2c1dc;
+    outline: none;
+}
+
+.txt_field label{
+    position: relative;
+    top: 50%;
+    left: 5px;
+    color: rgb(134, 0, 74);
+    transform: translate(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0,5s;
+}
+
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label {
+    top: -5px;
+    color: #7e004c;
+}
+
+.pass {
+    margin-bottom: 20px;
+    color: #a20c50;
+    cursor: pointer;
+}
+
+.pass:hover {
+    text-decoration: underline;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.botoes button {
+    padding: 12px 28px;
+    border-radius: 25px;
+    border: 2px solid #a0005b;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botoes button:first-child {
+    background-color: #b00062;
+    color: white;
+    border: 2px solid #b00062;
+}
+
+.botoes button:last-child {
+    background-color: white;
+    color: #b00062;
+    border: 2px solid #b00062;
+}
+
+.botoes button:hover {
+    transform: scale(1.05);
+}
+
+.signup_link {
+    margin:  30px 0 0;
+    text-align: center;
+    font-size: 16px;
+}
+
+.signup_link a {
+    text-decoration: none;
+    color: #a20c50;
+}
+
+.signup_link a:hover{
+    text-decoration: none;
+}
+
+.erro{
+    text-align: center;
+}
+
+#mensagem {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color:rgb(134, 0, 74);
+    background: #ffd4ea;
+    border: 1px solid #8c1155;
+    border-radius: 6px;
+    padding: 12px;
+    margin: 20px 0;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+.texto-erro {
+    font-size: 20px;
+    font-weight: bold;
+    color: #6e1d3f;
+}
+
+.texto-ajuda {
+    font-size: 15px;
+    color: #710048;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 500px) {
+    .center{
+        width: 90%;
+        padding: 0 25px 25px 25px;
+    }
+}
