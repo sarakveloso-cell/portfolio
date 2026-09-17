@@ -16,7 +16,7 @@ async function logar() {
 
         if (data.success) {
             alert("Login realizado com sucesso!");
-            window.location.href = "Sara diva.html";
+            window.location.href = "index.html";
         } else {
             alert(data.message || "E-mail ou senha inválidos!");
         }
