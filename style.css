@@ -1,185 +1,6 @@
-body{
-    
-   color: crimson;
-    background: linear-gradient(rgb(255, 254, 254), rgb(255, 176, 188));
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size: larger;
-    justify-content: center; 
-    align-items: center; 
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow-x: hidden;
-
-}
-
-
-
-nav {
-    display: flex;
-    align-items: center; 
-    gap: 20px; 
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 60px;
-    margin: 0;
-    padding: 0;
-}
-
-.logo {
-    width: 70px;
-    height: auto;
-}
-button{
-    color: rgb(255, 255, 255);
-    width: 120px;
-    height: 30px;
-    background-color: rgb(231, 113, 178);
-    font-size: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border-color: rgb(255, 32, 184);
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-    font-weight: bolder;
-}
-button:hover{
-    box-shadow: 0 0 30px rgb(218, 75, 146);
-    transform: scale(1.15);
-}
-
-header img {
-    width: 320px;
-    height: 230px;
-    border-radius: 20px;
-    border: 3px solid rgb(200, 86, 103);
-}
-
-.card-group {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    padding: 9px;
-}
-
-
-.center{
-    text-align: center;
-}
-
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 60vh;
-    text-align: center;
-}
-
-.caixa-info{
-    align-items: center;
-    width: 990px;
-    background-color: rgb(255, 198, 198);
-    padding: 35px;
-    border-radius: 15px;
-    text-align: center;
-    margin-bottom: 50px;
-    box-shadow: 0 4px 12px rgba(255, 9, 9, 0.15);
-}
-
-.caixa-info h2{
-    color: #a90f4c; 
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.caixa-info p{
-    text-align: center;
-    font-size: large;
-    font-weight:lighter;
-    line-height: 1.6;
-    margin-bottom: 20px;
-    color: rgb(128, 0, 70);
-}
-
-.caixa-info ul{
-    padding-left: 20px;
-    text-align: center;
-}
-
-.caixa-info li{
-    margin-bottom: 8px;
-    text-align: center;
-}
-
-h1{
-    color: rgb(202, 27, 123);
-    font-family: monospace;
-    text-align: center;
-}
-
-h3{
-    color: rgb(202, 27, 123);
-}
-
-p{
-    font-size: medium;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-footer {
-  display: flex;
-  flex-direction:column; 
-  align-items: center;    
-  min-height: 10vh;
-}
-
-.footer-btn {
-  display: flex;
-  flex-direction: row;
-  gap: 15px; 
-  margin-top: 20px;
-}
-
-.redes {
-  display: flex;         
-  gap: 10px;
-}
-
-.redes img {
-  width: 70px;
-}
-
-.btn {
-    color: rgb(255, 255, 255);
-    width: 100px;
-    height: 30px;
-    background-color: rgb(202, 27, 123);
-    font-size: medium;
-    font-weight: bolder;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border-color: rgb(255, 32, 184);
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-    flex-direction: row;
-}
-
-footer p{
-    text-align: center;
-    padding: 5px;
-    margin-top: 10px;
-    color: rgb(157, 32, 96);
-    font-size: 18px;
-    font-weight: bold;
-}
-
-/* =========================
+/* =========================================================
    CONFIGURAÇÕES GERAIS
-========================= */
+========================================================= */
 
 * {
     margin: 0;
@@ -199,6 +20,7 @@ body {
     overflow-x: hidden;
 
     font-family: Arial, sans-serif;
+    color: #5a2942;
 
     background: linear-gradient(
         135deg,
@@ -206,26 +28,24 @@ body {
         #f8b8d2,
         #f7c9dc
     );
-
-    color: #5a2942;
 }
 
 
-/* =========================
+/* =========================================================
    MENU / NAV
-========================= */
+========================================================= */
 
 nav {
     width: 100%;
-    min-height: 90px;
+    min-height: 80px;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    padding: 15px 35px;
+    padding: 10px 25px;
 
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 0.88);
 
     box-shadow: 0 4px 15px rgba(150, 50, 90, 0.15);
 
@@ -234,13 +54,17 @@ nav {
 }
 
 
-/* LOGO */
+/* =========================================================
+   LOGO
+========================================================= */
 
 .logo {
-    width: 95px;
-    height: 95px;
+    width: 75px;
+    height: 75px;
 
     object-fit: contain;
+
+    display: block;
 
     transition: 0.3s;
 }
@@ -250,22 +74,37 @@ nav {
 }
 
 
-/* LISTA DO MENU */
+/* =========================================================
+   LISTA DO MENU
+========================================================= */
 
 nav ul {
     list-style: none;
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 
-    gap: 10px;
+    gap: 8px;
+
+    margin: 0;
+    padding: 0;
 
     flex-wrap: wrap;
 }
 
+nav li {
+    list-style: none;
+}
 
-/* BOTÕES */
+nav li a {
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   BOTÕES DO MENU
+========================================================= */
 
 nav button {
     border: none;
@@ -273,12 +112,18 @@ nav button {
     background: #d85b91;
     color: white;
 
-    padding: 10px 15px;
+    padding: 8px 13px;
 
-    border-radius: 20px;
+    min-width: 90px;
+    min-height: 30px;
 
-    font-size: 14px;
+    border-radius: 18px;
+
+    font-size: 13px;
+    font-family: Arial, sans-serif;
     font-weight: bold;
+
+    white-space: nowrap;
 
     cursor: pointer;
 
@@ -291,33 +136,31 @@ nav button:hover {
     background: #b83e72;
 
     transform: translateY(-2px) scale(1.04);
+
+    box-shadow: 0 5px 15px rgba(150, 50, 90, 0.3);
 }
 
-nav a {
-    text-decoration: none;
-}
 
-
-/* =========================
+/* =========================================================
    HEADER
-========================= */
+========================================================= */
 
 header {
     width: 100%;
 
-    padding: 45px 20px 30px;
+    padding: 40px 20px 25px;
 
     text-align: center;
 }
 
 
-/* =========================
-   GRUPO DE CARDS
-========================= */
+/* =========================================================
+   GRUPO DE FOTOS
+========================================================= */
 
 .card-group {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1000px;
 
     margin: 0 auto;
 
@@ -326,35 +169,44 @@ header {
     justify-content: center;
     align-items: center;
 
-    gap: 25px;
-
-    flex-wrap: wrap;
+    gap: 40px;
 }
 
 
-/* CADA CARD */
+/* =========================================================
+   CADA FOTO
+========================================================= */
 
 .center {
     width: 30%;
-    max-width: 350px;
 
     display: flex;
+
     justify-content: center;
     align-items: center;
 }
 
+.center a {
+    display: block;
+    width: 100%;
+}
 
-/* IMAGENS */
+
+/* =========================================================
+   IMAGENS
+========================================================= */
 
 .center img {
     width: 100%;
-    height: 220px;
+    height: 165px;
+
+    display: block;
 
     object-fit: cover;
 
-    border-radius: 20px;
+    border-radius: 18px;
 
-    display: block;
+    border: 2px solid #c85667;
 
     box-shadow:
         0 8px 20px rgba(100, 30, 60, 0.25);
@@ -370,38 +222,40 @@ header {
 }
 
 
-/* =========================
+/* =========================================================
    TÍTULO SARA
-========================= */
+========================================================= */
 
 header h1 {
-    margin-top: 35px;
+    margin-top: 30px;
 
-    font-size: clamp(55px, 9vw, 110px);
+    font-size: clamp(60px, 8vw, 95px);
 
     color: #a72f63;
 
-    font-family: "Georgia", serif;
+    font-family: Georgia, serif;
+
+    text-align: center;
 
     text-shadow:
         2px 3px 5px rgba(120, 30, 70, 0.2);
 }
 
 
-/* =========================
+/* =========================================================
    CONTAINER
-========================= */
+========================================================= */
 
 .container {
     width: 100%;
 
-    padding: 20px;
+    padding: 15px 20px;
 }
 
 
-/* =========================
+/* =========================================================
    CAIXA SOBRE MIM
-========================= */
+========================================================= */
 
 .caixa-info {
     width: 90%;
@@ -409,36 +263,40 @@ header h1 {
 
     margin: 20px auto 50px;
 
-    padding: 35px;
+    padding: 30px;
 
     background: rgba(255, 255, 255, 0.9);
 
     border-radius: 25px;
 
+    text-align: center;
+
     box-shadow:
         0 10px 30px rgba(120, 40, 80, 0.2);
-
-    text-align: center;
 }
 
 
-/* TÍTULOS */
+/* =========================================================
+   TÍTULOS DA CAIXA
+========================================================= */
 
 .caixa-info h3 {
     margin-bottom: 15px;
 
     color: #b83e72;
 
-    font-size: 25px;
+    font-size: 23px;
 }
 
 
-/* PARÁGRAFOS */
+/* =========================================================
+   TEXTO
+========================================================= */
 
 .caixa-info p {
     margin-bottom: 30px;
 
-    font-size: 17px;
+    font-size: 16px;
 
     line-height: 1.8;
 
@@ -446,14 +304,41 @@ header h1 {
 }
 
 
-/* =========================
+/* =========================================================
+   OBJETIVOS
+========================================================= */
+
+.caixa-info ul {
+    width: 100%;
+
+    padding: 0;
+
+    margin: 0;
+
+    list-style-position: inside;
+
+    text-align: center;
+}
+
+.caixa-info li {
+    margin-bottom: 10px;
+
+    color: #60364a;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
    FOOTER
-========================= */
+========================================================= */
 
 footer {
     width: 100%;
 
-    padding: 40px 20px 25px;
+    padding: 35px 20px 25px;
 
     background: #9f3565;
 
@@ -463,9 +348,9 @@ footer {
 }
 
 
-/* =========================
+/* =========================================================
    REDES SOCIAIS
-========================= */
+========================================================= */
 
 .redes {
     display: flex;
@@ -473,18 +358,16 @@ footer {
     justify-content: center;
     align-items: center;
 
-    gap: 18px;
+    gap: 15px;
 
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 
     flex-wrap: wrap;
 }
 
-
 .redes a {
     display: block;
 }
-
 
 .redes img {
     width: 50px;
@@ -494,21 +377,22 @@ footer {
 
     border-radius: 12px;
 
+    display: block;
+
     transition: 0.3s;
 
     box-shadow:
         0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-
 .redes img:hover {
     transform: translateY(-5px) scale(1.08);
 }
 
 
-/* =========================
+/* =========================================================
    BOTÕES DO FOOTER
-========================= */
+========================================================= */
 
 .footer-btn {
     display: flex;
@@ -520,14 +404,12 @@ footer {
 
     flex-wrap: wrap;
 
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
-
 
 .footer-btn a {
     text-decoration: none;
 }
-
 
 .btn {
     border: 2px solid white;
@@ -536,17 +418,18 @@ footer {
 
     color: white;
 
-    padding: 10px 20px;
+    padding: 9px 20px;
 
     border-radius: 20px;
 
     font-size: 14px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
 
     cursor: pointer;
 
     transition: 0.3s;
 }
-
 
 .btn:hover {
     background: white;
@@ -557,9 +440,9 @@ footer {
 }
 
 
-/* =========================
+/* =========================================================
    TEXTOS DO FOOTER
-========================= */
+========================================================= */
 
 footer p {
     margin-top: 8px;
@@ -572,13 +455,42 @@ footer p {
 }
 
 
-/* ==================================================
-   RESPONSIVIDADE PARA CELULAR
-================================================== */
+/* =========================================================
+   TABLETS
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    nav {
+        padding: 10px 15px;
+    }
+
+    nav ul {
+        gap: 6px;
+    }
+
+    nav button {
+        min-width: auto;
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+
+    .card-group {
+        gap: 20px;
+        max-width: 900px;
+    }
+
+    .center img {
+        height: 170px;
+    }
+}
+
+
+/* =========================================================
+   CELULAR
+========================================================= */
 
 @media (max-width: 768px) {
-
-    /* BODY */
 
     body {
         width: 100%;
@@ -586,31 +498,41 @@ footer p {
     }
 
 
-    /* =========================
-       NAV MOBILE
-    ========================= */
+    /* -------------------------
+       NAV
+    ------------------------- */
 
     nav {
+        width: 100%;
+
+        min-height: auto;
+
+        display: flex;
+
         flex-direction: column;
 
         justify-content: center;
         align-items: center;
 
-        padding: 15px 12px 20px;
-
         gap: 15px;
+
+        padding: 15px 10px 18px;
     }
 
 
-    /* LOGO */
+    /* -------------------------
+       LOGO
+    ------------------------- */
 
     .logo {
-        width: 80px;
-        height: 80px;
+        width: 75px;
+        height: 75px;
     }
 
 
-    /* MENU */
+    /* -------------------------
+       MENU
+    ------------------------- */
 
     nav ul {
         width: 100%;
@@ -624,41 +546,41 @@ footer p {
         justify-items: stretch;
     }
 
-
     nav li {
         width: 100%;
     }
 
-
     nav li a {
         width: 100%;
+
         display: block;
     }
-
 
     nav button {
         width: 100%;
 
-        padding: 11px 5px;
+        min-width: 0;
 
-        font-size: 13px;
+        padding: 10px 5px;
+
+        font-size: 12px;
 
         border-radius: 15px;
     }
 
 
-    /* =========================
+    /* -------------------------
        HEADER
-    ========================= */
+    ------------------------- */
 
     header {
-        padding: 30px 15px 20px;
+        padding: 25px 12px 20px;
     }
 
 
-    /* =========================
-       CARDS
-    ========================= */
+    /* -------------------------
+       FOTOS
+    ------------------------- */
 
     .card-group {
         width: 100%;
@@ -667,17 +589,16 @@ footer p {
 
         flex-direction: column;
 
-        gap: 20px;
+        gap: 18px;
 
-        padding: 0 5px;
+        padding: 0;
     }
-
 
     .center {
         width: 100%;
-        max-width: 420px;
-    }
 
+        max-width: 400px;
+    }
 
     .center img {
         width: 100%;
@@ -688,9 +609,9 @@ footer p {
     }
 
 
-    /* =========================
-       SARA
-    ========================= */
+    /* -------------------------
+       TÍTULO SARA
+    ------------------------- */
 
     header h1 {
         margin-top: 25px;
@@ -699,36 +620,36 @@ footer p {
     }
 
 
-    /* =========================
+    /* -------------------------
        CONTAINER
-    ========================= */
+    ------------------------- */
 
     .container {
-        padding: 10px 15px;
+        width: 100%;
+
+        padding: 10px 12px;
     }
 
 
-    /* =========================
+    /* -------------------------
        SOBRE MIM
-    ========================= */
+    ------------------------- */
 
     .caixa-info {
         width: 100%;
 
-        padding: 25px 20px;
+        padding: 25px 18px;
 
-        margin: 20px auto 35px;
+        margin: 15px auto 35px;
 
         border-radius: 20px;
     }
-
 
     .caixa-info h3 {
         font-size: 22px;
 
         margin-bottom: 12px;
     }
-
 
     .caixa-info p {
         font-size: 15px;
@@ -740,15 +661,29 @@ footer p {
         text-align: justify;
     }
 
+    .caixa-info ul {
+        text-align: center;
+    }
 
-    /* =========================
+    .caixa-info li {
+        font-size: 14px;
+
+        margin-bottom: 8px;
+    }
+
+
+    /* -------------------------
        FOOTER
-    ========================= */
+    ------------------------- */
 
     footer {
         padding: 30px 15px 20px;
     }
 
+
+    /* -------------------------
+       REDES
+    ------------------------- */
 
     .redes {
         gap: 12px;
@@ -756,14 +691,15 @@ footer p {
         margin-bottom: 25px;
     }
 
-
     .redes img {
         width: 45px;
         height: 45px;
     }
 
 
-    /* BOTÕES FOOTER */
+    /* -------------------------
+       BOTÕES FOOTER
+    ------------------------- */
 
     .footer-btn {
         width: 100%;
@@ -777,11 +713,9 @@ footer p {
         margin-bottom: 25px;
     }
 
-
     .footer-btn a {
         width: 100%;
     }
-
 
     .btn {
         width: 100%;
@@ -791,6 +725,10 @@ footer p {
         font-size: 13px;
     }
 
+
+    /* -------------------------
+       TEXTOS FOOTER
+    ------------------------- */
 
     footer p {
         font-size: 11px;
@@ -805,9 +743,9 @@ footer p {
 }
 
 
-/* ==================================================
+/* =========================================================
    CELULARES PEQUENOS
-================================================== */
+========================================================= */
 
 @media (max-width: 400px) {
 
@@ -816,11 +754,9 @@ footer p {
         padding-right: 8px;
     }
 
-
     nav ul {
         gap: 6px;
     }
-
 
     nav button {
         font-size: 11px;
@@ -828,6 +764,16 @@ footer p {
         padding: 9px 3px;
     }
 
+
+    .logo {
+        width: 70px;
+        height: 70px;
+    }
+
+
+    .center {
+        max-width: 350px;
+    }
 
     .center img {
         height: 165px;
@@ -843,9 +789,16 @@ footer p {
         padding: 22px 16px;
     }
 
+    .caixa-info h3 {
+        font-size: 20px;
+    }
 
     .caixa-info p {
         font-size: 14px;
+    }
+
+    .caixa-info li {
+        font-size: 13px;
     }
 
 
